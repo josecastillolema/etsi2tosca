@@ -1,4 +1,4 @@
-# tosca2etsi
+# etsi2tosca
 Converts ETSI NFV templates into TOSCA profile.
 
 Use
@@ -12,7 +12,7 @@ Options:
   -h, --help            show this help message and exit
 ```
 
-Example:
+Example 1:
 ```
 $ ./etsi2tosca.py samples/opencv_transcoder_vnfd.yaml 
 tosca_definitions_version: tosca_simple_profile_for_nfv_1_0_0
@@ -91,3 +91,7 @@ topology_template:
         vendor: 5GinFIRE
 ```
 
+Example 2:
+```
+$ ./etsi2tosca.py samples/opencv_transcoder_vnfd.yaml > opencv_transcoder_vndf_tosca.yaml
+```
