@@ -12,6 +12,9 @@ Options:
   -h, --help            show this help message and exit
 ```
 
+Examples
+--------------
+
 Example 1:
 ```
 $ ./etsi2tosca.py samples/opencv_transcoder_vnfd.yaml 
