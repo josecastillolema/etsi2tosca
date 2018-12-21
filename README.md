@@ -28,19 +28,25 @@ metadata:
 topology_template:
   inputs:
    ssh-hostname:
-     type: STRING
+     type: string
       default: <rw_mgmt_ip>
 
    ssh-username:
-     type: STRING
+     type: string
       default: ubuntu
 
    ssh-password:
-     type: STRING
+     type: string
       default: 5ginfire
 
    ssh-private-key:
-     type: STRING
+     type: string
+
+   stream-ip:
+     type: string
+
+   output-port:
+     type: integer
 
   node_templates:
     VDU1:

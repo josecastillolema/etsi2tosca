@@ -84,10 +84,8 @@ def analize_tosca(parsed_tosca, debug):
     for i in config:
         if debug:
             print i['name']
-        #etsi['config'].append(i['name'])
         if debug:
             print i['data-type']
-        #etsi['config'].append(i['data-type'])
         if i.has_key('default-value'):
             if debug:
                 print i['default-value']
@@ -95,6 +93,15 @@ def analize_tosca(parsed_tosca, debug):
             etsi['config'].append((i['name'],i['data-type'],i['default-value']))
         else:
             etsi['config'].append((i['name'],i['data-type']))
+
+    config2 = parsed_tosca['vnf-configuration']['service-primitive'][1]['parameter']
+    etsi['config2'] = []
+    for i in config2:
+        if debug:
+            print i['name']
+        if debug:
+            print i['data-type']
+        etsi['config2'].append((i['name'],i['data-type']))
 
 def create_etsi():
     #print etsi
@@ -110,7 +117,13 @@ def create_etsi():
     print '  inputs:'
     for i in etsi['config']:
         print '   %s:' % i[0]
-        print '     type:', i[1]
+        print '     type:', i[1].lower()
+        if len(i)==3:
+            print '      default:', i[2]
+        print
+    for i in etsi['config2']:
+        print '   %s:' % i[0]
+        print '     type:', i[1].lower()
         if len(i)==3:
             print '      default:', i[2]
         print
