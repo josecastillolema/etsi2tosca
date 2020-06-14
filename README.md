@@ -16,7 +16,7 @@ Examples
 --------------
 
 Example 1:
-```
+```yaml
 $ ./etsi2tosca.py samples/opencv_transcoder_vnfd.yaml 
 tosca_definitions_version: tosca_simple_profile_for_nfv_1_0_0
 
