@@ -1,3 +1,7 @@
+![GitHub](https://img.shields.io/github/license/josecastillolema/etsi2tosca)
+![GitHub language count](https://img.shields.io/github/languages/count/josecastillolema/etsi2tosca)
+![GitHub top language](https://img.shields.io/github/languages/top/josecastillolema/etsi2tosca)
+
 # etsi2tosca
 Converts ETSI NFV templates into TOSCA profile.
 
