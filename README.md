@@ -1,7 +1,6 @@
 ![GitHub](https://img.shields.io/github/license/josecastillolema/etsi2tosca)
 ![GitHub top language](https://img.shields.io/github/languages/top/josecastillolema/etsi2tosca)
 ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/josecastillolema/etsi2tosca)
-[![Requirements Status](https://requires.io/github/josecastillolema/etsi2tosca/requirements.svg?branch=master)](https://requires.io/github/josecastillolema/etsi2tosca/requirements/?branch=master)
 
 
 # etsi2tosca
